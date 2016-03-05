@@ -1,0 +1,29 @@
+group 'net.mkcz'
+version '0.1'
+
+apply plugin: 'java'
+apply plugin: 'idea'
+
+ext {
+    fullName = 'kraken-api Samples'
+    fullDescription = 'Sample usages of kraken-api'
+    teamname = 'mkcz.net'
+    siteUrl = 'https://github.com/mike-mkcz/kraken-samples'
+    sourceUrl = 'https://github.com/mike-mkcz/kraken-samples.git'
+}
+
+repositories {
+    mavenCentral()
+    flatDir {
+        dirs 'lib'
+    }
+}
+
+dependencies {
+    compile group: 'com.mashape.unirest', name: 'unirest-java', version: '1.4.8'
+    compile name: 'kraken-api-0.1'
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.11'
+}
