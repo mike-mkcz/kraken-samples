@@ -23,5 +23,14 @@
     <orderEntry type="library" name="Gradle: commons-logging:commons-logging:1.1.3" level="project" />
     <orderEntry type="library" name="Gradle: commons-codec:commons-codec:1.6" level="project" />
     <orderEntry type="library" name="Gradle: org.apache.httpcomponents:httpcore-nio:4.3.2" level="project" />
+    <orderEntry type="module-library">
+      <library name="Gradle: kraken-api-0.1.2">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/kraken-api-0.1.2.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
   </component>
 </module>

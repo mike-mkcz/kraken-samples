@@ -14,14 +14,11 @@ ext {
 
 repositories {
     mavenCentral()
-    flatDir {
-        dirs 'lib'
-    }
 }
 
 dependencies {
     compile group: 'com.mashape.unirest', name: 'unirest-java', version: '1.4.8'
-    compile name: 'kraken-api-0.1'
+    compile fileTree(dir: 'lib', include: ['*.jar'])
 }
 
 task wrapper(type: Wrapper) {
